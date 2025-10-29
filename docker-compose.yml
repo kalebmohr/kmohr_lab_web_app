@@ -1,0 +1,25 @@
+---
+# Author: Kaleb Mohr
+# Date: 29 Oct 2025
+# Purpose: This is a Docker compose file. It automates the creation of Docker containers. This file is written in YAML format.
+
+
+services:
+  lab-web-app1:
+    build: "."
+    image: "lab-app:latest"
+    ports:
+      - "5001:5000/tcp"
+    volumes:
+      - type: "bind"
+        source: "./src"
+        target: "/src"
+  lab-web-app2:
+    image: "lab-app:latest"
+    ports:
+      - "5002:5000/tcp"
+    volumes:
+      - type: "bind"
+        source: "./src"
+        target: "/src"
+...
