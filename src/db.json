@@ -1,4 +1,10 @@
 {
-    "message": "Hello from your Flask Docker app!",
-    "status": "success"
+  "employees": [
+    { "name": "Alice", "title": "Network Engineer", "salary": 85000 },
+    { "name": "Bob", "title": "Security Analyst", "salary": 92000 },
+    { "name": "Charlie", "title": "Cloud Architect", "salary": 115000 },
+    { "name": "Diana", "title": "Systems Administrator", "salary": 78000 },
+    { "name": "Evan", "title": "DevOps Engineer", "salary": 99000 }
+  ]
 }
+
