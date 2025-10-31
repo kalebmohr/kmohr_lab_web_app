@@ -9,15 +9,7 @@ services:
     build: "."
     image: "lab-app:latest"
     ports:
-      - "5001:5000/tcp"
-    volumes:
-      - type: "bind"
-        source: "./src"
-        target: "/src"
-  lab-web-app2:
-    image: "lab-app:latest"
-    ports:
-      - "5002:5000/tcp"
+      - "5000:5000/tcp"
     volumes:
       - type: "bind"
         source: "./src"
